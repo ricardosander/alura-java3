@@ -1,5 +1,11 @@
 package br.com.ricardosander.banco.conta;
 
+/**
+ * ContaCorrente
+ * Classe que representa uma conta corrente.
+ * @author ricardo.sander.lopes@gmail.com
+ *
+ */
 public class ContaCorrente extends Conta implements Tributavel {
 
 	@Override

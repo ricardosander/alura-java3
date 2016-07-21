@@ -1,5 +1,11 @@
 package br.com.ricardosander.banco.conta;
 
+/**
+ * ContaPoupanca
+ * Classe que representa uma conta poupança.
+ * @author ricardo.sander.lopes@gmail.com
+ *
+ */
 public class ContaPoupanca extends Conta {
 
 	@Override

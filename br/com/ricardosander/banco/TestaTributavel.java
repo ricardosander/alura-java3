@@ -4,8 +4,18 @@ import br.com.ricardosander.banco.conta.ContaCorrente;
 import br.com.ricardosander.banco.conta.Tributavel;
 import br.com.ricardosander.banco.conta.ValorInvalidoException;
 
+/**
+ * TestaTributavel
+ * Classe para realização de testes da classes tributáveis. 
+ * @author ricardo.sander.lopes@gmail.com
+ *
+ */
 public class TestaTributavel {
 
+	/**
+	 * Método main
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		
 		ContaCorrente cc = new ContaCorrente();

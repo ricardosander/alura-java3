@@ -5,8 +5,18 @@ import br.com.ricardosander.banco.conta.ContaPoupanca;
 import br.com.ricardosander.banco.conta.ValorInvalidoException;
 import br.com.ricardosander.banco.sistema.AtualizadorDeContas;
 
+/**
+ * TestaContas
+ * Classe que realiza o teste de classes contas.
+ * @author ricardo.sander.lopes@gmail.com
+ *
+ */
 public class TestaContas {
 
+	/**
+	 * Método main
+	 * @param args
+	 */
     public static void main(String[] args) {
 
         ContaCorrente cc = new ContaCorrente();

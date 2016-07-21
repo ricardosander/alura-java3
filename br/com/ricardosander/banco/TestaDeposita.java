@@ -3,8 +3,18 @@ package br.com.ricardosander.banco;
 import br.com.ricardosander.banco.conta.Conta;
 import br.com.ricardosander.banco.conta.ContaCorrente;
 
+/**
+ * TestaDeposita
+ * Classe que testa o depósito.
+ * @author ricardo.sander.lopes@gmail.com
+ *
+ */
 public class TestaDeposita {
 
+	/**
+	 * Método principal.
+	 * @param args
+	 */
 	public static void main(String[] args) {
 
 		Conta c = new ContaCorrente();

@@ -5,8 +5,18 @@ import br.com.ricardosander.banco.conta.SeguroDeVida;
 import br.com.ricardosander.banco.conta.ValorInvalidoException;
 import br.com.ricardosander.banco.sistema.GerenciadorDeImpostoDeRenda;
 
+/**
+ * TestaGerenciadorDeImpostoDeRenda
+ * Classe para realizar testes do gerenciador de impostos de renda.
+ * @author ricardo.sander.lopes@gmail.com
+ *
+ */
 public class TestaGerenciadorDeImpostoDeRenda {
 
+	/**
+	 * Método main
+	 * @param args
+	 */
 	public static void main(String[] args) {
 
 		GerenciadorDeImpostoDeRenda gerenciador = new GerenciadorDeImpostoDeRenda();
