@@ -39,5 +39,8 @@ public class TestaContas {
         adc.roda(cp);
 
         System.out.println("Saldo Total: " + adc.getSaldoTotal());
+
+        System.out.println("Imprimindo conta corrente: " + cc.toString());
+        System.out.println("Imprimindo conta poupança: " + cp.toString());
     }
 }
