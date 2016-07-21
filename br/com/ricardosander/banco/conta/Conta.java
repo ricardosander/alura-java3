@@ -49,4 +49,9 @@ public abstract class Conta {
 	 * @param taxa Taxa para reajuste do saldo da Conta.
 	 */
 	public abstract void atualiza(double taxa);
+	
+	@Override
+	public String toString() {
+		return "Esta é uma conta conta saldo R$ " + this.saldo;
+	}
 }
