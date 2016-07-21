@@ -8,6 +8,11 @@ package br.com.ricardosander.banco.conta;
 public abstract class Conta {
 	
 	protected double saldo;
+	private int numero;
+	
+	public Conta(int numero) {
+		this.numero = numero;
+	}
 
 	/**
 	 * Retorna o saldo da Conta.
@@ -53,5 +58,10 @@ public abstract class Conta {
 	@Override
 	public String toString() {
 		return "Esta é uma conta conta saldo R$ " + this.saldo;
+	}
+	
+	@Override
+	public boolean equals(Object obj) {
+		return ((Conta) obj).numero == this.numero;
 	}
 }

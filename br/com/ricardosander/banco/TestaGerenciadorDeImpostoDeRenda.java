@@ -24,7 +24,7 @@ public class TestaGerenciadorDeImpostoDeRenda {
 		SeguroDeVida sv = new SeguroDeVida();
 		gerenciador.adiciona(sv);
 
-		ContaCorrente cc = new ContaCorrente();
+		ContaCorrente cc = new ContaCorrente(1);
 		try {
 			cc.deposita(1000);
 		} catch (ValorInvalidoException e) {

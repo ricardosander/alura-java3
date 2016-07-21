@@ -8,6 +8,10 @@ package br.com.ricardosander.banco.conta;
  */
 public class ContaCorrente extends Conta implements Tributavel {
 
+	public ContaCorrente(int numero) {
+		super(numero);
+	}
+
 	@Override
 	public void atualiza(double taxa) {
 		this.saldo += this.saldo * taxa * 2;
