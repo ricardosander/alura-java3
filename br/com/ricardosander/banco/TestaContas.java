@@ -19,8 +19,8 @@ public class TestaContas {
 	 */
     public static void main(String[] args) {
 
-        ContaCorrente cc = new ContaCorrente(123);
-        ContaPoupanca cp = new ContaPoupanca(345);
+        ContaCorrente cc = new ContaCorrente(123, "Pedro");
+        ContaPoupanca cp = new ContaPoupanca(345, "Cezar");
 
         try {
 			cc.deposita(1000);

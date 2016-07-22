@@ -8,8 +8,8 @@ package br.com.ricardosander.banco.conta;
  */
 public class ContaPoupanca extends Conta {
 
-	public ContaPoupanca(int numero) {
-		super(numero);
+	public ContaPoupanca(int numero, String cliente) {
+		super(numero, cliente);
 	}
 
 	@Override

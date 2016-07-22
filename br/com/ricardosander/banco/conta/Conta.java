@@ -6,12 +6,14 @@ package br.com.ricardosander.banco.conta;
  *
  */
 public abstract class Conta {
-	
+
+	protected String cliente;
 	protected double saldo;
 	private int numero;
 	
-	public Conta(int numero) {
+	public Conta(int numero, String cliente) {
 		this.numero = numero;
+		this.cliente = cliente;
 	}
 
 	/**
@@ -62,6 +64,8 @@ public abstract class Conta {
 	
 	@Override
 	public boolean equals(Object obj) {
-		return ((Conta) obj).numero == this.numero;
+		
+		Conta conta = (Conta) obj;
+		return conta.numero == this.numero && conta.cliente == this.cliente;
 	}
 }

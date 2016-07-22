@@ -8,8 +8,8 @@ package br.com.ricardosander.banco.conta;
  */
 public class ContaCorrente extends Conta implements Tributavel {
 
-	public ContaCorrente(int numero) {
-		super(numero);
+	public ContaCorrente(int numero, String cliente) {
+		super(numero, cliente);
 	}
 
 	@Override

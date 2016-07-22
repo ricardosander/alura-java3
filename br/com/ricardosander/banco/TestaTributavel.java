@@ -18,7 +18,7 @@ public class TestaTributavel {
 	 */
 	public static void main(String[] args) {
 		
-		ContaCorrente cc = new ContaCorrente(1);
+		ContaCorrente cc = new ContaCorrente(1, "José");
         try {
 			cc.deposita(100);
 		} catch (ValorInvalidoException e) {

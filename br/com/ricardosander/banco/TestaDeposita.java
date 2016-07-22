@@ -17,7 +17,7 @@ public class TestaDeposita {
 	 */
 	public static void main(String[] args) {
 
-		Conta c = new ContaCorrente(1);
+		Conta c = new ContaCorrente(1, "Pedro");
 		double deposito = 0;
 
 		try {
