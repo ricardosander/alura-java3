@@ -6,7 +6,7 @@ package br.com.ricardosander.banco.conta;
  * @author ricardo.sander.lopes@gmail.com
  *
  */
-public class ContaPoupanca extends Conta {
+public class ContaPoupanca extends Conta implements Comparable<ContaPoupanca> {
 
 	public ContaPoupanca(int numero, String cliente) {
 		super(numero, cliente);
@@ -20,5 +20,10 @@ public class ContaPoupanca extends Conta {
 	@Override
 	public void deposita(double deposito) throws ValorInvalidoException {
 		super.deposita(deposito - 0.1);
+	}
+
+	@Override
+	public int compareTo(ContaPoupanca o) {
+		return this.numero - o.numero;
 	}
 }
