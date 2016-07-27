@@ -2,6 +2,7 @@ package br.com.ricardosander.banco;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.LinkedList;
 import java.util.List;
 
 import br.com.ricardosander.banco.conta.ContaPoupanca;
@@ -14,7 +15,7 @@ public class TestaOrdenacao {
 		ContaPoupanca c2 = new ContaPoupanca(1, "Cliente 2");
 		ContaPoupanca c3 = new ContaPoupanca(23, "Cliente 3");
 		
-		List<ContaPoupanca> contas = new ArrayList<>();
+		List<ContaPoupanca> contas = new LinkedList<>();
 		contas.add(c1);
 		contas.add(c2);
 		contas.add(c3);
