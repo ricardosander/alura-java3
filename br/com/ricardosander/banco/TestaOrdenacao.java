@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Random;
 
 import br.com.ricardosander.banco.conta.ContaPoupanca;
 
@@ -11,14 +12,11 @@ public class TestaOrdenacao {
 
 	public static void main(String[] args) {
 		
-		ContaPoupanca c1 = new ContaPoupanca(123, "Cliente 1");
-		ContaPoupanca c2 = new ContaPoupanca(1, "Cliente 2");
-		ContaPoupanca c3 = new ContaPoupanca(23, "Cliente 3");
-		
 		List<ContaPoupanca> contas = new LinkedList<>();
-		contas.add(c1);
-		contas.add(c2);
-		contas.add(c3);
+		Random random = new Random();
+		for (int i = 0; i < 5; i++) {
+			contas.add(new ContaPoupanca(random.nextInt(100), "Cliente " + i));
+		}
 		
 		System.out.println("Contas antes da ordenação:");
 		for (ContaPoupanca contaPoupanca : contas) {
