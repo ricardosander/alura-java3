@@ -31,5 +31,23 @@ public class TestaOrdenacao {
 		for (ContaPoupanca contaPoupanca : contas) {
 			System.out.println(contaPoupanca.getNumero());
 		}
+		
+		Collections.reverse(contas);
+		System.out.println("Contas após inversão:");
+		for (ContaPoupanca contaPoupanca : contas) {
+			System.out.println(contaPoupanca.getNumero());
+		}
+		
+		Collections.shuffle(contas);
+		System.out.println("Contas após embaralhamento:");
+		for (ContaPoupanca contaPoupanca : contas) {
+			System.out.println(contaPoupanca.getNumero());
+		}
+		
+		Collections.rotate(contas, 2);
+		System.out.println("Contas após rotação 2:");
+		for (ContaPoupanca contaPoupanca : contas) {
+			System.out.println(contaPoupanca.getNumero());
+		}
 	}
 }
