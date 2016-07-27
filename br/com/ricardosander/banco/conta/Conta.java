@@ -9,8 +9,16 @@ public abstract class Conta {
 
 	protected String cliente;
 	protected double saldo;
-	private int numero;
+	protected int numero;
 	
+	public int getNumero() {
+		return numero;
+	}
+
+	public void setNumero(int numero) {
+		this.numero = numero;
+	}
+
 	public Conta(int numero, String cliente) {
 		this.numero = numero;
 		this.cliente = cliente;
