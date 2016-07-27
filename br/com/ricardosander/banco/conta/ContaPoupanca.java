@@ -24,6 +24,11 @@ public class ContaPoupanca extends Conta implements Comparable<ContaPoupanca> {
 
 	@Override
 	public int compareTo(ContaPoupanca o) {
-		return this.numero - o.numero;
+		return this.cliente.compareTo(o.cliente);
+	}
+	
+	@Override
+	public String toString() {
+		return "Número: " + this.numero + ", Cliente: " + this.cliente + ", saldo: " + this.getSaldo();
 	}
 }
