@@ -71,7 +71,7 @@ public abstract class Conta {
 	
 	@Override
 	public String toString() {
-		return "Esta é uma conta conta saldo R$ " + this.saldo;
+		return "Número: " + this.numero + ", Cliente: " + this.cliente + ", saldo: " + this.getSaldo() + "\n";
 	}
 	
 	@Override
