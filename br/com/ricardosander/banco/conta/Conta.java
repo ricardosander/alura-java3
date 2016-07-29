@@ -11,6 +11,10 @@ public abstract class Conta {
 	protected double saldo;
 	protected int numero;
 	
+	public String getCliente() {
+		return cliente;
+	}
+	
 	public int getNumero() {
 		return numero;
 	}
